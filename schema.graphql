@@ -18,16 +18,21 @@ A date string, such as 2007-12-03, compliant with the `full-date` format outline
 scalar Date
 
 type Position {
+  achivements: [String!]!
   company: String!
   endDate: Date
   id: ID!
+  months: Int!
   startDate: Date!
   title: String!
+  years: Int!
 }
 
 type Query {
   bio: Bio!
-  position(id: ID): Position!
+
+  """Find a position by its ID"""
+  position(id: ID): Position
   positions: [Position!]!
 }
 

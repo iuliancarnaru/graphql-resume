@@ -66,15 +66,18 @@ export interface NexusGenFieldTypes {
     website: NexusGenScalars['URL']; // URL!
   }
   Position: { // field return type
+    achivements: string[]; // [String!]!
     company: string; // String!
     endDate: NexusGenScalars['Date'] | null; // Date
     id: string; // ID!
+    months: number; // Int!
     startDate: NexusGenScalars['Date']; // Date!
     title: string; // String!
+    years: number; // Int!
   }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio']; // Bio!
-    position: NexusGenRootTypes['Position']; // Position!
+    position: NexusGenRootTypes['Position'] | null; // Position
     positions: NexusGenRootTypes['Position'][]; // [Position!]!
   }
 }
