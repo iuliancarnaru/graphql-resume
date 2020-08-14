@@ -2,6 +2,7 @@ export const data = {
   bio: {
     name: "Iulian Carnaru",
     tagline: "Software Engineer",
+    email: "iulian.carnaru@outlook.com",
     github: "https://github.com/iuliancarnaru",
     website: "https://iuliancarnaru.uk/",
     linkedin: "https://www.linkedin.com/in/iulian-carnaru-51aa63108/",

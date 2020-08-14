@@ -5,9 +5,10 @@ export const Bio = objectType({
   definition(t) {
     t.string("name");
     t.string("tagline");
-    t.string("github");
-    t.string("website");
-    t.string("linkedin");
+    t.string("email");
     t.string("objective");
+    t.url("github", (bio) => new URL(bio.github));
+    t.url("website", (bio) => new URL(bio.website));
+    t.url("linkedin", (bio) => new URL(bio.linkedin));
   },
 });
